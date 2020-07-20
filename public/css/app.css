@@ -31219,6 +31219,87 @@ a.text-muted:hover {
   color: #ffffff;
 }@charset "UTF-8";
 
+.text-blue {
+  color: #3490dc;
+}
+
+.blue {
+  color: #3490dc;
+}
+
+.indigo {
+  color: #6574cd;
+}
+
+.purple {
+  color: #9561e2;
+}
+
+.pink {
+  color: #f66d9b;
+}
+
+.red {
+  color: #e3342f;
+}
+
+.orange {
+  color: #f6993f;
+}
+
+.yellow {
+  color: #ffed4a;
+}
+
+.green {
+  color: #38c172;
+}
+
+.teal {
+  color: #4dc0b5;
+}
+
+.cyan {
+  color: #6cb2eb;
+}
+
+.slide-enter-active {
+  -webkit-animation: slide-in 0.3s ease-in forwards;
+          animation: slide-in 0.3s ease-in forwards;
+}
+
+.slide-leave-active {
+  animation: slide-in 0.3s ease-out forwards reverse;
+}
+
+.slide-move {
+  transition: transform 1s;
+}
+
+@-webkit-keyframes slide-in {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

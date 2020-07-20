@@ -7,6 +7,11 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+import {Form, HasError, AlertError} from 'vform';
+
+window.Form = Form;
+Vue.component(HasError.name, HasError)
+Vue.component(AlertError.name, AlertError)
 
 /**
  * The following block of code may be used to automatically register your
@@ -26,7 +31,9 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
+import router from './Router/router';
 const app = new Vue({
     el: '#app',
+    router,
+    linkActiveClass: 'active'
 });
